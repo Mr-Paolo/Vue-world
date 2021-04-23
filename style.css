@@ -1,0 +1,14 @@
+.world{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    top:10%;
+    border: 2px solid
+}
+
+.enemy{
+    position: absolute;
+    background: red;
+    transition: all 1s linear;
+}
