@@ -6,9 +6,12 @@
     top:10%;
     border: 2px solid
 }
-
+.character,
 .enemy{
     position: absolute;
     background: red;
     transition: all 1s linear;
+}
+.character{
+    background-color: blue;
 }

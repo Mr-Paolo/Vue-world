@@ -10,18 +10,35 @@
 </head>
 <body>
     <div id="app">
+        <div class="form-group">
+            <label for="">Cell size</label>
+            <input type="number" v-model="cellSize">
+        </div>
+        <div class="form-group">
+            <label for="">Enemies amount</label>
+            <input type="number" v-model="enemiesAmount">
+        </div>
         <div
             class="btn btn-primary"
             @click="startWorld()" >Start world</div>
         <div class="world">
-                <div class="enemy"
-                    v-for="(enemy,i) of enemies"
-                    :style="{
-                        width: cellSize+'%',
-                        height: cellSize+'%',
-                        left: enemy.left * cellSize + '%',
-                        top: enemy.top * cellSize + '%',
-                    }"></div>
+            <div class="enemy"
+                v-for="(enemy,i) of enemies"
+                :style="{
+                    width: cellSize+'%',
+                    height: cellSize+'%',
+                    left: enemy.left * cellSize + '%',
+                    top: enemy.top * cellSize + '%',
+                }"></div>
+
+
+            <div class="character"
+                :style="{
+                    width: cellSize+'%',
+                    height: cellSize+'%',
+                    left: character.left * cellSize + '%',
+                    top: character.top * cellSize + '%',
+                }"></div>
         </div>
     </div>
 
